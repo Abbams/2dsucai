@@ -433,8 +433,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 100000, guid: 4c5736ea0764d49c3a6adc2250d33f0f, type: 3}
   - {fileID: 100006, guid: 66fe2da2077f94183ae003dde85a8b1a, type: 3}
-  starttime: 6
-  timestep: 1
+  starttime: 1
+  timestep: 3
 --- !u!1 &328317519
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,8 +481,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 100000, guid: 4c5736ea0764d49c3a6adc2250d33f0f, type: 3}
   - {fileID: 100006, guid: 66fe2da2077f94183ae003dde85a8b1a, type: 3}
-  starttime: 6
-  timestep: 1
+  starttime: 1
+  timestep: 3
 --- !u!1 &377703925
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,6 +875,14 @@ PrefabInstance:
     - target: {fileID: 400030, guid: 708042f972a104a1793983dbefca755f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 708042f972a104a1793983dbefca755f, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 708042f972a104a1793983dbefca755f, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708042f972a104a1793983dbefca755f, type: 3}
@@ -1659,8 +1667,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 100000, guid: 4c5736ea0764d49c3a6adc2250d33f0f, type: 3}
   - {fileID: 100006, guid: 66fe2da2077f94183ae003dde85a8b1a, type: 3}
-  starttime: 6
-  timestep: 1
+  starttime: 1
+  timestep: 3
 --- !u!1 &2087825900
 GameObject:
   m_ObjectHideFlags: 0

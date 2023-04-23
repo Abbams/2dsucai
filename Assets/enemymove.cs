@@ -13,22 +13,33 @@ public class enemymove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+/*    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Obstacle")
         {
             Flip();
         }
 
-    }
+    }*/
     private void FixedUpdate() {
         rb.velocity = new Vector2(rb.transform.localScale.x * movespeed, -5);
     }
     // Update is called once per frame
     void Update()
     {
-        front = Physics2D.Linecast(transform.position,
-frontCheck., LayerMask.GetMask("Obstacle");
+        /*front = Physics2D.Linecast(transform.position,frontCheck.transform.position,LayerMask.GetMask("Obstacle"));*/
+        if (Physics2D.OverlapPoint(frontCheck.transform.position, LayerMask.GetMask("Obstacle")) == true)
+            Flip();
+        
+        
+        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale > 0.0000001)
+                Time.timeScale = 0;
+            else
+                Time.timeScale = 1;
+        }
     }
     void Flip()//自定义转向函数，实现小豆人转向
                //facingright !facingright;
