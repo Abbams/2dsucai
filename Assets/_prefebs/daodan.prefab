@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1327884424812302671}
   - component: {fileID: 1664298510639440325}
   - component: {fileID: 1588115972560916067}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: daodan
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -130,7 +130,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: 4
-  explostion: {fileID: 100000, guid: 42404bf7d14c342f69690c9961a7530d, type: 3}
+  explostion: {fileID: 100000, guid: 86600a32ee32a654f9e82ca5f88a2e00, type: 3}
+  ac:
+  - {fileID: 8300000, guid: 039514349165244c6a43be5c3070d14b, type: 3}
+  - {fileID: 8300000, guid: 85020549641fa452d9136ac2fc852efd, type: 3}
+  - {fileID: 8300000, guid: 2e20b5071623f44cf9c72acf016de4b6, type: 3}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 21200000}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +225,7 @@ GameObject:
   - component: {fileID: 400004}
   - component: {fileID: 21200002}
   - component: {fileID: 9500000}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}

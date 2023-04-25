@@ -67,9 +67,11 @@
     <Compile Include="Assets\_Scripts\contanrol.cs" />
     <Compile Include="Assets\_Scripts\swanfly.cs" />
     <Compile Include="Assets\creat.cs" />
+    <Compile Include="Assets\destoryobject.cs" />
     <Compile Include="Assets\destroyrocket.cs" />
     <Compile Include="Assets\enemymove.cs" />
     <Compile Include="Assets\move.cs" />
+    <Compile Include="Assets\scoreconl.cs" />
     <Compile Include="Assets\shootconcl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity/2D素材/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -30,16 +30,9 @@ public class enemymove : MonoBehaviour
         /*front = Physics2D.Linecast(transform.position,frontCheck.transform.position,LayerMask.GetMask("Obstacle"));*/
         if (Physics2D.OverlapPoint(frontCheck.transform.position, LayerMask.GetMask("Obstacle")) == true)
             Flip();
-        
-        
-        
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (Time.timeScale > 0.0000001)
-                Time.timeScale = 0;
-            else
-                Time.timeScale = 1;
-        }
+
+
+
     }
     void Flip()//自定义转向函数，实现小豆人转向
                //facingright !facingright;

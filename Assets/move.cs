@@ -32,6 +32,11 @@ public class move : MonoBehaviour
 
 
     }
+   
+    private void Update()
+    {
+        
+    }
     void FixedUpdate()
     {
         

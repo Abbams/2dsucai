@@ -6,18 +6,32 @@ public class destroyrocket : MonoBehaviour
 {
     public float t=4.0f;
     public GameObject explostion;
-
+    public AudioClip[] ac;
     void Start()
     {
         Destroy(gameObject, t);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
 
         {
-            Destroy(gameObject);//销毁火箭弹
-        Quaternion t = Quaternion.Euler(new Vector3(0, 0, Random.Range(0, 360)));
-           Destroy(Instantiate(explostion, transform.position, t),0.33f);
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            GameObject.Find("score").GetComponent<scoreconl>().addscore();
+            int index = Random.Range(0, ac.Length);
+            AudioSource.PlayClipAtPoint(ac[index], transform.position);
+
         }
+        
+        Quaternion q = Quaternion.Euler(0, 0, Random.Range(0, 360.0f));
+        //实例化爆炸效果
+        GameObject go = Instantiate(explostion, transform.position, q);
+        Destroy(go, 0.333f);
+        Destroy(gameObject);
+
+
+    }
     // Update is called once per frame
         void Update()
     {

@@ -16,6 +16,7 @@ public class contanrol : MonoBehaviour
     bool grounded;//着地检测标记
     bool jump = false;
     private float time;
+    public AudioClip[] au;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,7 +24,11 @@ public class contanrol : MonoBehaviour
         facingright = true;
         groundCheck = transform.Find("groundCheck").transform;
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        int index = Random.Range (0, au.Length);
+        AudioSource.PlayClipAtPoint(au[index], transform.position);
+    }
     // Update is called once per frame
     private void FixedUpdate()
     {
@@ -73,7 +78,14 @@ public class contanrol : MonoBehaviour
         {
             jump = true;
         }
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale > 0.0000001)
+                Time.timeScale = 0;
+            else
+                Time.timeScale = 1;
+        }
+
 
     }
 }
