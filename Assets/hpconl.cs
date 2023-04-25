@@ -10,6 +10,7 @@ public class hpconl : MonoBehaviour
     public Sprite damagedImage;//敌人的受伤状态的图片
     public Sprite deadedImage;//敌人的死亡状态的图片
     bool dead = false;
+    public GameObject u100;
     void Start()
     { 
         sr = transform.Find("body").GetComponent<SpriteRenderer>();
@@ -30,7 +31,12 @@ public class hpconl : MonoBehaviour
         foreach (Collider2D c in cd)
             c.isTrigger=true;
         GetComponent<enemymove>().enabled = false;
-        Destroy(gameObject);
+        dead=true;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        Vector3 uiposition = transform.position;
+        uiposition.y += 2.0f;
+        Destroy( Instantiate(u100, uiposition, Quaternion.identity),0.33f);
+
 
     }
     private void FixedUpdate()

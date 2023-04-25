@@ -14,7 +14,7 @@ public class contanrol : MonoBehaviour
     public bool facingright=false;
     public Transform groundCheck;//着地检测对象的transform
     bool grounded;//着地检测标记
-    bool jump = false;
+    public bool jump = false;
     private float time;
     public AudioClip[] au;
     void Start()
