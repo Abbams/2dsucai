@@ -25,7 +25,7 @@ public class hpconl : MonoBehaviour
 
         }
         sr.enabled = true;
-        sr.sprite = damagedImage;
+        sr.sprite = deadedImage;
         Collider2D[] cd=GetComponents<Collider2D>();
         foreach (Collider2D c in cd)
             c.isTrigger=true;
