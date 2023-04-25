@@ -17,7 +17,8 @@ public class destroyrocket : MonoBehaviour
         {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<hpconl>().hurt();
             GameObject.Find("score").GetComponent<scoreconl>().addscore();
             int index = Random.Range(0, ac.Length);
             AudioSource.PlayClipAtPoint(ac[index], transform.position);

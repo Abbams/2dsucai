@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 5800000}
   - component: {fileID: 9500000}
   - component: {fileID: 2166000098509534105}
+  - component: {fileID: 8378007839739337719}
   m_Layer: 10
   m_Name: enemy2
   m_TagString: Enemy
@@ -215,3 +216,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 5
   frontCheck: {fileID: 100002}
+--- !u!114 &8378007839739337719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9054a28d216dfc4f9db275048c9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 2
+  damagedImage: {fileID: 21300000, guid: bc16422a503ec43cab4ad9ddab02ff7a, type: 3}
+  deadedImage: {fileID: 21300000, guid: 73fa5f80d4ddd4196b767cc01c1b5c68, type: 3}

@@ -70,6 +70,7 @@
     <Compile Include="Assets\destoryobject.cs" />
     <Compile Include="Assets\destroyrocket.cs" />
     <Compile Include="Assets\enemymove.cs" />
+    <Compile Include="Assets\hpconl.cs" />
     <Compile Include="Assets\move.cs" />
     <Compile Include="Assets\scoreconl.cs" />
     <Compile Include="Assets\shootconcl.cs" />
